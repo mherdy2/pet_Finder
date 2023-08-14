@@ -5,7 +5,7 @@ const pets = require('./data');
 const express = require('express');
 const app = express();
 
-const PORT = 8080;
+const PORT = 5500;
 
 // GET - / - returns homepage
 app.get('/', (req, res) => {
@@ -49,7 +49,7 @@ app.get('/api/v1/pets/:name', (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log('Server is listening on port ' + PORT);
+    console.log('Server is listening on port http://localhost:' +PORT);
 });
 
 module.exports = app;
